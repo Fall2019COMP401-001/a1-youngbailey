@@ -11,6 +11,8 @@ public class A1Novice {
 		// Your code follows here.
 		int numOfCustomers = scan.nextInt();
 		
+		for(int i = 0; i < numOfCustomers; i++) {
+		
 		Double total = 0.0;
 		
 		String firstName = scan.next();
@@ -27,26 +29,27 @@ public class A1Novice {
 		
 		
 	
-		 for (int i = 0; i < items; i++) {
-			amount[i] = scan.nextInt();
-			itemName[i] = scan.next();
-			price[i] = scan.nextDouble();
+		 for (int j = 0; j < items; j++) {
+			amount[j] = scan.nextInt();
+			itemName[j] = scan.next();
+			price[j] = scan.nextDouble();
 		}
 		 
 		 
 		
-		for(int i = 0; i < amount.length; i ++) {
-			total = (Double) (total + (amount[i] * price[i]));
+		for(int j = 0; j < amount.length; j ++) {
+			total = (Double) (total + (amount[j] * price[j]));
 		}
 		
 		
 		System.out.println(firstName.charAt(0) + "." + " " + (lastName));
 		System.out.println(total);
 				
-		scan.close();
 		
-	
-}
+		
+		}
+scan.close();
+	}
 
 }
  
